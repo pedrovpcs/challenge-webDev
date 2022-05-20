@@ -1,28 +1,41 @@
 
-body {
-
+header {
+    display: flex;
+    width: 800px;
+    height: 70px;
+    background-color: yellow;
 }
 
 #logo {
     background-color: blue;
-    float: left;
-    width: 70px;
+    width: 150px;
     height: 70px;
-
-
 }
 
 nav { 
     background-color: green;
     text-align: center;
     vertical-align: auto;
-
+    width: 650px;
 }
 
-header {
-    width: 1200px;
-    height: 70px;
-    background-color: yellow;
+ul{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+}
+
+li{
+    padding-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav_button:hover{
+    background-color: white;
 }
 
 h1 {
@@ -53,7 +66,6 @@ p {
 
 }
 
-
 fieldset {
 
 background-color: blue;
@@ -71,4 +83,16 @@ button {
     
     margin-left: 200px;
 
+}
+
+main{
+    width: 800px;
+    height: 1000px;
+    background-color: aquamarine;
+}
+
+footer{
+    width: 800px;
+    height: 50px;
+    background-color: black;
 }
