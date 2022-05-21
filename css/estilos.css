@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+.sombra{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+}
 .centralizado{
     margin: 0 auto;
 }
@@ -10,20 +13,17 @@ header {
     display: flex;
     width: 800px;
     height: 70px;
-    background-color: yellow;
 }
 
-#logo {
-    background-color: blue;
-    width: 150px;
-    height: 70px;
+#logo{
+    width: 10%;
 }
 
 nav { 
-    background-color: green;
+    background-color: #0F62FE;
     text-align: center;
     vertical-align: auto;
-    width: 650px;
+    width: 800px;
 }
 
 .nav_list{
@@ -33,38 +33,27 @@ nav {
 }
 
 li{
-    padding-top: 15px;
+    padding-top: 30px;
+    padding-right: 5px;
 }
 
 a{
+    color: white;
     text-decoration: none;
     padding: 10px;
 }
 
 .nav_button:hover{
     background-color: white;
-}
-
-#sedeIBM {
-    margin-left: 600px;
-}
-
-p {
-    text-align:left;
-    background-color: crimson;
-    width: 600px;
-    
-
+    color: black;
+    border-radius: 5px;
 }
 
 fieldset {
-
 background-color: blue;
 width: 450px;
 height: 50px;
 margin-left: 600px;
-
-
 }
 
 label {
@@ -72,25 +61,64 @@ label {
 }
 
 button {
-    
     margin-left: 200px;
-
 }
 
 main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     text-align: center;
     width: 800px;
     height: 1000px;
-    background-color: aquamarine;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    color: #0F62FE;
+    padding: 10px 0px;
+}
+
+h2{
+    text-align: left;
+    font-family: serif;
+    margin-bottom: 15px;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.80rem;
+}
+
+img{
+    width: 100%;
 }
 
 footer{
+    background-color: #0F62FE;
+    text-align: center;
     width: 800px;
-    height: 50px;
-    background-color: black;
 }
 
+footer>p{
+    text-align: center;
+    padding: 3px 0px;
+    margin: 0px;
+    text-indent: 0px;
+    line-height: 1rem;
+    font-weight: bolder;
+    color: #F2F2F2;
+    font-variant: small-caps;
+}
+
+
+/* Especificos para o SiteMap */
 .site_map_ul{
     list-style: none;
+}
 
+/* para testa os posicionamentos */
+.linha{
+    border: 1px solid black;
 }
