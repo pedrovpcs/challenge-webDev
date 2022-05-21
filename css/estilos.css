@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+}
+
+.centralizado{
+    margin: 0 auto;
+}
 
 header {
     display: flex;
@@ -19,7 +26,7 @@ nav {
     width: 650px;
 }
 
-ul{
+.nav_list{
     list-style: none;
     flex-direction: row;
     display: flex;
@@ -36,22 +43,6 @@ a{
 
 .nav_button:hover{
     background-color: white;
-}
-
-h1 {
-    background-color: blueviolet;
-    margin-left: 600px;
-    width: 94px;
-    height: 44px;
-
-}
-
-h2 {
-    background-color: blueviolet;
-    width: 64px;
-    height: 25px;
-
-
 }
 
 #sedeIBM {
@@ -75,6 +66,7 @@ margin-left: 600px;
 
 
 }
+
 label {
     color: white;
 }
@@ -86,6 +78,7 @@ button {
 }
 
 main{
+    text-align: center;
     width: 800px;
     height: 1000px;
     background-color: aquamarine;
@@ -95,4 +88,9 @@ footer{
     width: 800px;
     height: 50px;
     background-color: black;
+}
+
+.site_map_ul{
+    list-style: none;
+
 }
