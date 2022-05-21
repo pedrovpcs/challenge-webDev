@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estilos.css" />
+        <title>WebDev Challenge Sprint 2</title>
+
+        <script>
+
+          function apagarFundo(element){
+  
+          }
+  
+          function checar(){
+            var campoEmail = document.getElementById("email")
+            var campoSenha = document.getElementById("senha")
+            var campoNome = document.getElementById("nome")
+            var campoAniver = document.getElementById("data")
+            var camposErrados = ''
+            var conta = 0
+            if (campoEmail.value == ''){
+              conta++
+              camposErrados += "Email,"
+              campoEmail.style.backgroundColor = "rgb(255, 182, 93)";
+              campoEmail.setAttribute('placeholder','Insira um email');
+            }
+            if (campoSenha.value == ''){
+              conta++
+              camposErrados += "Senha,"
+              campoSenha.style.backgroundColor = "rgb(255, 182, 93)";
+              campoSenha.setAttribute('placeholder','Insira uma senha');
+            }
+            if (campoNome.value == ''){
+              conta++
+              camposErrados += "Nome"
+              campoNome.style.backgroundColor = "rgb(255, 182, 93)";
+              campoNome.setAttribute('placeholder','Insira o seu nome');
+            }
+            if (campoAniver.value == ''){
+              if (conta == 0){
+              camposErrados += "Data de nascimento"
+              campoAniver.style.backgroundColor = "rgb(255, 182, 93)";
+              campoAniver.setAttribute('placeholder','Insira o seu nome');
+              }else{
+              camposErrados += " e a Data de nascimento"
+              campoAniver.style.backgroundColor = "rgb(255, 182, 93)";
+              campoAniver.setAttribute('placeholder','Insira o seu nome');
+              }
+            }
+            if (camposErrados != ''){
+              alert("Verifique o(s) campo(s): " + camposErrados)
+            }
+          }
+  
+        </script>
+
+    </head>
+    <body>
+
+        <header class="centralizado ">
+
+            <img src="images/logo-ibm-100x100.png" alt="logo" id="logo">
+    
+            <nav>
+              <ul class="nav_list">
+                <li><a class="nav_button" href="index.html">Home</a></li>
+                <li><a class="nav_button" href="login.html">Login</a></li>
+                <li><a class="nav_button" href="contato.html">Contato</a></li>
+                <li><a class="nav_button" href="evento.html">Evento</a></li>
+                <li><a class="nav_button" href="site_map.html">SiteMap</a></li>
+              </ul>
+            </nav>
+    
+          </header>
+          <main class="centralizado">
+            <h1>Faça seu cadastro</h1>
+            <h2>Preencha seus dados</h2>
+            <form action="a">
+                <fieldset>
+                    <label for="nome" class="label_form">Nome completo</label><br>
+                    <input type="text" name="nome" id="nome" class="campos_form"><br>
+
+                    <label for="email" class="label_form">Email</label><br>
+                    <input type="email" name="email" id="email" class="campos_form"><br>
+
+                    <label for="Data de nascimento" class="label_form">Data de nascimento</label><br>
+                    <input type="date" name="data" id = "data" class="campos_form"><br>
+
+                    <label for="senha" class="label_form">Senha</label><br>
+                    <input type="password" name="senha" id="senha" class="campos_form"><br>
+
+                    <input type="button" value="Confirmar cadastro" onclick="checar()">
+                </fieldset>
+            </form>
+          </main>
+
+          <footer class="centralizado">
+
+            <p>
+              Hive Jobs ©
+            </p>
+    
+          </footer>
+          
+    </body>
+</html>

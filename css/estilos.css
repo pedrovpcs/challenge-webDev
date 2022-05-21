@@ -135,20 +135,19 @@ footer>p{
 fieldset {
     border-radius: 5px;
     border: none;
-    display: flex;
-    flex-wrap: wrap;
     background-color: #0F62FE;
     width: 400px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
     margin-bottom: 40px;
+    text-align: left;
 }
 
 .label_form{
-    padding-top: 5px;
     padding-right: 5px;
 }
 
 .campos_form{
+    margin: 5px 0px;
     width: 400px;
     height: 20px;
 }
