@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/estilos.css" />
-        <title>WebDev Challenge Sprint 2</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/estilos.css" />
+      <title>WebDev Challenge Sprint 2</title>
+      
+      <script>
+
+        function apagarFundo(element){
+
+        }
+
+        function checar(){
+          var campoEmail = document.getElementById("email")
+          var campoSenha = document.getElementById("senha")
+          var camposErrados = ''
+          if (campoEmail.value == ''){
+            camposErrados += "Email "
+            campoEmail.style.backgroundColor = "rgb(255, 182, 93)";
+            campoEmail.setAttribute('placeholder','Insira um email');
+          }
+          if (campoSenha.value == ''){
+            camposErrados += "Senha "
+            campoSenha.style.backgroundColor = "rgb(255, 182, 93)";
+            campoSenha.setAttribute('placeholder','Insira uma senha');
+          }
+          if (camposErrados != ''){
+            alert("Verifique os campos: " + camposErrados)
+          }
+        }
+
+      </script>
+
     </head>
     <body>
 
@@ -22,8 +50,25 @@
             </nav>
     
           </header>
-          <main>
 
+          <main class="centralizado">
+            <h1>Login e Cadastro</h1>
+            <h2>Faça seu Login</h2>
+            <form action="">
+              <fieldset>
+                <label for="senha" class="label_form">Email</label>
+
+                <input type="email" name="email" id="email" class="campos_form"><br><br>
+
+                <label for="senha" class="label_form">Senha</label>
+
+                <input type="password" name="senha" id="senha" class="campos_form"><br><br>
+
+                <input type="button" value="Entrar" onclick="checar()">
+              </fieldset>
+
+            </form>
+            <p class="tirar_ident centralizar_text">Ainda não é cadastrado? <a href="">clique aqui</a> para se cadastrar</p>
           </main>
 
           <footer class="centralizado">
