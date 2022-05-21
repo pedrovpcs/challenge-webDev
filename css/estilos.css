@@ -160,3 +160,67 @@ input[type=button]{
     border: none;
     background-color: white;
 }
+
+/* CSS Curriculo Digital */
+#curriculo{
+    min-width: 100%;
+    height: auto;
+    background-color: #ADDCE6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0;
+}
+#curriculo1{
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#curriculo2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+}
+#curriculo2 > h3{
+    padding: 10px;
+}
+#curriculo2 > p{
+    padding: 0px 0px 0px 30px;
+}
+#curriculo2 >#keywords-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#curriculo2 >#keywords-area>.keywords {
+    background-color: #0212AD;
+    padding: 5px 5px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+#curriculo1 > h3{
+    padding: 10px 0px;
+}
+#curriculo1 > #foto{
+    width: 95%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 0px 0px;
+}
+#foto > p {
+    font-size: 2em;
+}
