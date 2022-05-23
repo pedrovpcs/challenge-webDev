@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+}
+
+.sombra{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+}
+.centralizado{
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    width: 800px;
+    height: 70px;
+}
+
+#logo{
+    width: 10%;
+}
+
+nav { 
+    background-color: #0F62FE;
+    text-align: center;
+    vertical-align: auto;
+    width: 800px;
+}
+
+.nav_list{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+}
+
+li{
+    padding-top: 30px;
+    padding-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #6D99F2;
+}
+
+.nav_button{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav_button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+}
+
+button {
+    margin-left: 200px;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    width: 800px;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    color: #0F62FE;
+    padding: 10px 0px;
+}
+
+h2{
+
+    text-align: left;
+    font-family: serif;
+    margin: 15px 0px;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.80rem;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color: #0F62FE;
+    text-align: center;
+    width: 800px;
+}
+
+footer>p{
+    text-align: center;
+    padding: 3px 0px;
+    margin: 0px;
+    text-indent: 0px;
+    line-height: 1rem;
+    font-weight: bolder;
+    color: #F2F2F2;
+    font-variant: small-caps;
+}
+
+
+/* Especificos para o SiteMap */
+.site_map_ul{
+    list-style: none;
+}
+
+/* Formatar textos */
+.tirar_ident{
+    text-indent: 0;
+}
+
+.centralizar_text{
+    text-align: center;
+}
+
+/* para testa os posicionamentos */
+.linha{
+    border: 1px solid black;
+}
+
+/* Para paginas com formulários */
+fieldset {
+    border-radius: 5px;
+    border: none;
+    background-color: #0F62FE;
+    width: 400px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.label_form{
+    padding-right: 5px;
+}
+
+.campos_form{
+    margin: 5px 0px;
+    width: 400px;
+    height: 20px;
+}
+
+input[type=button]{
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    background-color: white;
+}
+
+/* CSS Curriculo Digital */
+#curriculo{
+    min-width: 100%;
+    height: auto;
+    background-color: #ADDCE6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0;
+}
+#curriculo1{
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#curriculo2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+}
+#curriculo2 > h3{
+    padding: 10px;
+}
+#curriculo2 > p{
+    padding: 0px 0px 0px 30px;
+}
+#curriculo2 >#keywords-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#curriculo2 >#keywords-area>.keywords {
+    background-color: #0212AD;
+    padding: 5px 5px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+#curriculo1 > h3{
+    padding: 10px 0px;
+}
+#curriculo1 > #foto{
+    width: 95%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 0px 0px;
+}
+#foto > p {
+    font-size: 2em;
+}
